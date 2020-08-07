@@ -51,7 +51,6 @@ function cardMaker(articleObj) {
     })
     return card;
 }
-
 axios.get('https://lambda-times-api.herokuapp.com/articles')
     .then(response => { 
         const articleTopics = Object.values(response.data.articles);
@@ -63,6 +62,7 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
     })
 })
     .catch(error => {
-        error = console.log('error');
+        debugger
+        console.log('Error', error);
         // console.log('Error: ', error.message); // an error would appear a message 
-})
+});
