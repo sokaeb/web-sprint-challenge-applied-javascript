@@ -31,6 +31,6 @@ arrayOfTopicNames.forEach(topicName => {
 })
 })
 .catch(error => {
-    debugger
+    // debugger
     console.log(error.message); // if there's an error, a message would appear
 })
